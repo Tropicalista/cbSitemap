@@ -1,0 +1,43 @@
+{
+    "name":"cbSitemap",
+    "version":"1.0.0",
+    "author":"Francesco Pepe",
+    "location":"",
+    "directory":"",
+    "createPackageDirectory":true,
+    "packageDirectory":"",
+    "homepage":"https://github.com/Tropicalista/cb-sitemap",
+    "documentation":"http://wiki.coldbox.org",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/Tropicalista/cb-sitemap"
+    },
+    "bugs":"",
+    "slug":"cbSitemap",
+    "shortDescription":"Sitemap generator",
+    "description":"A simple module that create pages/entries sitemap hen you create/delete content.",
+    "instructions":"",
+    "changelog":"",
+    "type":"modules",
+    "keywords":"sitemap",
+    "private":false,
+    "engines":[
+        {
+            "type":"railo",
+            "version":">4.1"
+        },
+        {
+            "type":"adobe",
+            "version":">9.02"
+        }
+    ],
+    "defaultEngine":"",
+    "defaultPort":0,
+    "projectURL":"",
+    "license":[
+        {
+            "type":"Apache2",
+            "url":"http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ]
+}
