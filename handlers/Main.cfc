@@ -9,6 +9,7 @@ component {
 
 		prc.entryResults 	= entryService.findPublishedEntries();
 		prc.pageResults 	= pageService.findPublishedPages();
+		prc.contentResults 	= contentService.findPublishedContent();
 
 		return renderView( view="sitemap", module="cbSitemap" );
 	}
