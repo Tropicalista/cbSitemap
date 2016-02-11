@@ -29,19 +29,19 @@ component singleton{
 		switch(arguments.contentType){
 			// Pages
 			case "page" : {
-				// Building comment feed or content feed
+				// Building page sitemap
 				sitemapXML = buildPageSitemap(argumentCollection=arguments);
 				break;
 			}
 			// Blog
 			case "entry" : {
-				// Building comment feed or content feed
+				// Building entry sitemap
 				sitemapXML = buildEntrySitemap(argumentCollection=arguments);
 				break;
 			}
 			// Default Site
 			default : {
-				// Building comment feed or content feed
+				// Building sitemap
 				sitemapXML = buildContentSitemap(argumentCollection=arguments);
 				break;
 			}

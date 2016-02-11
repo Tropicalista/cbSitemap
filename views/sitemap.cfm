@@ -3,21 +3,21 @@
 <ul>
 	<li><a href="#cb.linkHome()#">Home</a>
 		<ul>
-			<cfloop array="#prc.contentResults.content#" index="content">
-				<cfif content.getContentType() Eq "page">
-					<cfif !content.hasParent()>
-						<li><a href="#cb.linkPage(content.getSlug())#">#content.getTitle()#</a> - #content.getHTMLDescription()#
-							<cfif content.hasChild()>
-								<ul>
-								<cfloop array="#content.getChildren()#" index="child">
-									<li><a href="#cb.linkPage(child.getSlug())#">#child.getTitle()#</a> - #child.getHTMLDescription()#</li>
-								</cfloop>
-								</ul>
-							</cfif>
-						</li>
-					</cfif>
+			<!--- loop over pages --->
+			<cfloop array="#prc.pageResults.pages#" index="page">
+				<cfif !page.hasParent()>
+					<li><a href="#cb.linkPage(page.getSlug())#">#page.getTitle()#</a> - #page.getHTMLDescription()#
+						<cfif page.hasChild()>
+							<ul>
+							<cfloop array="#page.getChildren()#" index="child">
+								<li><a href="#cb.linkPage(child.getSlug())#">#child.getTitle()#</a> - #child.getHTMLDescription()#</li>
+							</cfloop>
+							</ul>
+						</cfif>
+					</li>
 				</cfif>
 			</cfloop>
+			<!--- show blog entry point --->
 			<cfif prc.cbSettings.cb_site_disable_blog>				
 				<li><a href="#cb.linkBlog()#">#prc.cbSettings.cb_site_blog_entrypoint#</a></li>
 			</cfif>

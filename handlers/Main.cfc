@@ -7,10 +7,15 @@ component {
 
 	public function index(){
 
-		prc.entryResults 	= entryService.findPublishedEntries();
-		prc.pageResults 	= pageService.findPublishedPages();
-		prc.contentResults 	= contentService.findPublishedContent();
-
+		// search entries with filters and all
+		prc.pageResults = pageService.search( 
+			search		= "",
+			isPublished	= true,
+			category	= "all",
+			author		= "all",
+			creator		= "all",
+			sortOrder	= "order asc" 
+		);
 		return renderView( view="sitemap", module="cbSitemap" );
 	}
 
