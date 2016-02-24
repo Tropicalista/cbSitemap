@@ -18,7 +18,7 @@
 				</cfif>
 			</cfloop>
 			<!--- show blog entry point --->
-			<cfif prc.cbSettings.cb_site_disable_blog>				
+			<cfif NOT prc.cbSettings.cb_site_disable_blog>				
 				<li><a href="#cb.linkBlog()#">#prc.cbSettings.cb_site_blog_entrypoint#</a></li>
 			</cfif>
 		</ul>
