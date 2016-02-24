@@ -1,0 +1,25 @@
+{
+  "name": "cbSitemap",
+  "version": "1.0.1",
+  "description": "This module generate sitemap when pages/entries are created or deleted.",
+  "main": "GruntFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tropicalista/cbSitemap"
+  },
+  "author": "Francesco Pepe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tropicalista/cbSitemap/issues"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compress": "^0.14.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "matchdep": "^1.0.0"
+  },  
+  "homepage": "https://github.com/Tropicalista/cbSitemap"
+}
